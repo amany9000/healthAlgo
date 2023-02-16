@@ -1,0 +1,188 @@
+{
+  "male": {
+    "heartRate": {
+      "label": "Heart Rate",
+      "healthyRange": [
+        0.25,
+        0.75
+      ],
+      "absoluteRange": [
+        0,
+        1
+      ],
+      "BMI": 21,
+      "unitLabel": "mg/dl"
+    },
+    "muscleActivity": {
+      "label": "Muscle Activity",
+      "healthyRange": [
+        50,
+        130
+      ],
+      "absoluteRange": [
+        0,
+        300
+      ],
+      "BMI": 9,
+      "unitLabel": "mg/dl"
+    },
+    "stressLevel": {
+      "label": "Stress Level",
+      "healthyRange": [
+        40,
+        60
+      ],
+      "absoluteRange": [
+        0,
+        150
+      ],
+      "BMI": 14,
+      "unitLabel": "mg/dl"
+    },
+    "oxygenSaturation": {
+      "label": "Oxygen Saturation",
+      "healthyRange": [
+        70,
+        150
+      ],
+      "absoluteRange": [
+        0,
+        300
+      ],
+      "BMI": 18,
+      "unitLabel": "mg/dl"
+    },
+    "temperature": {
+      "label": "Temperature",
+      "healthyRange": [
+        99,
+        148
+      ],
+      "absoluteRange": [
+        50,
+        230
+      ],
+      "BMI": 15,
+      "unitLabel": "mm/Hg"
+    },
+    "BMI": {
+      "label": "BMI",
+      "healthyRange": [
+        170,
+        205
+      ],
+      "absoluteRange": [
+        50,
+        400
+      ],
+      "BMI": 19,
+      "unitLabel": "lbs"
+    },
+    "height": {
+      "label": "Height",
+      "healthyRange": [
+        170,
+        205
+      ],
+      "absoluteRange": [
+        50,
+        400
+      ],
+      "BMI": 17,
+      "unitLabel": "lbs"
+    }
+  },
+  "female": {
+    "heartRate": {
+      "label": "Heart Rate",
+      "healthyRange": [
+        0.25,
+        0.75
+      ],
+      "absoluteRange": [
+        0,
+        1
+      ],
+      "BMI": 21,
+      "unitLabel": "mg/dl"
+    },
+    "muscleActivity": {
+      "label": "Muscle Activity",
+      "healthyRange": [
+        50,
+        130
+      ],
+      "absoluteRange": [
+        0,
+        300
+      ],
+      "BMI": 9,
+      "unitLabel": "mg/dl"
+    },
+    "stressLevel": {
+      "label": "Stress Level",
+      "healthyRange": [
+        40,
+        60
+      ],
+      "absoluteRange": [
+        0,
+        150
+      ],
+      "BMI": 14,
+      "unitLabel": "mg/dl"
+    },
+    "oxygenSaturation": {
+      "label": "Oxygen Saturation",
+      "healthyRange": [
+        70,
+        150
+      ],
+      "absoluteRange": [
+        0,
+        300
+      ],
+      "BMI": 18,
+      "unitLabel": "mg/dl"
+    },
+    "temperature": {
+      "label": "Temperature",
+      "healthyRange": [
+        99,
+        148
+      ],
+      "absoluteRange": [
+        50,
+        230
+      ],
+      "BMI": 15,
+      "unitLabel": "mm/Hg"
+    },
+    "BMI": {
+      "label": "BMI",
+      "healthyRange": [
+        170,
+        205
+      ],
+      "absoluteRange": [
+        50,
+        400
+      ],
+      "BMI": 19,
+      "unitLabel": "lbs"
+    },
+    "height": {
+      "label": "Height",
+      "healthyRange": [
+        170,
+        205
+      ],
+      "absoluteRange": [
+        50,
+        400
+      ],
+      "BMI": 17,
+      "unitLabel": "lbs"
+    }
+  }
+}

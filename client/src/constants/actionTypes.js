@@ -1,0 +1,16 @@
+export const CREATE_PATIENTS = 'CREATE_PATIENTS';
+export const UPDATE_PATIENTS = 'UPDATE_PATIENTS';
+export const DELETE_PATIENTS = 'DELETE_PATIENTS';
+export const FETCH_ALL_PATIENTS = 'FETCH_ALL_PATIENTS';
+export const CREATE_DOCTORS = 'CREATE_DOCTORS';
+export const UPDATE_DOCTORS = 'UPDATE_DOCTORS';
+export const DELETE_DOCTORS = 'DELETE_DOCTORS';
+export const FETCH_ALL_DOCTORS = 'FETCH_ALL_DOCTORS';
+
+
+
+export const LIKE = 'LIKE';
+export const AUTH = 'AUTH';
+export const AUTHCREATE = 'AUTHCREATE';
+export const LOGOUT = 'LOGOUT';
+
