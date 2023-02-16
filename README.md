@@ -15,3 +15,6 @@ client
 1. go to client (cd client)
 2. npm install
 3. npm start
+
+HealthAlgo Page
+http://localhost:3000/patient/profile
