@@ -9,22 +9,21 @@ import {
     KeyboardDatePicker,
 } from '@material-ui/pickers';
 
-
+import getScore from "./algo.js";
 
 export default function PatientProfile() {
     const [validated, setValidated] = useState(false);
+    let score;
     const [selectedDate, setSelectedDate] = React.useState(new Date('1970-01-01T00:00:00'));
 
     const handleDateChange = (date) => {
         setSelectedDate(date);
     };
 
-    const handleSubmit = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
+    const handleSubmit = async () => {
+        console.log("getScore 1", score)
+        score  = await getScore()
+        console.log("getScore2 ", score)
 
         setValidated(true);
     };
@@ -58,7 +57,7 @@ export default function PatientProfile() {
                                 <Card.Body>
                                     <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
                                         <Tab eventKey="profile" title="Profile">
-                                            <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                                            <Form noValidate validated={validated}>
                                                 <Row className="mb-3">
                                                     <Form.Group as={Col} md="4" controlId="validationCustom01">
                                                         <Form.Label>First Name</Form.Label>
@@ -118,6 +117,16 @@ export default function PatientProfile() {
                                                             plaintext
                                                             readOnly
                                                             value="Healthy (<5.69%)"
+                                                        />
+                                                    </Form.Group>
+                                                </Row>
+                                                <Row className="mb-4">
+                                                    <Form.Group as={Col} md="4" controlId="validationCustom01">
+                                                        <Form.Label>Score</Form.Label>
+                                                        <Form.Control
+                                                            plaintext
+                                                            readOnly
+                                                            value={score}
                                                         />
                                                     </Form.Group>
                                                 </Row>

@@ -1,11 +1,13 @@
 import Serv from "@serv-official/vault-sdk";
-import * as React from "react";
+
 
 
 export default async function getScore() {
     let age;
     await Serv.requestAccess();
-    const response3 = await Serv.checkParams(
+    //await Serv.claimCertificate("national-id");
+   console.log("vault-sdk") 
+   const response3 = await Serv.checkParams(
         "medical",
         "lessThan",
         ["Age"],
@@ -136,7 +138,7 @@ export default async function getScore() {
 }
 
 function algo(BMI, cholesterol, hemoglobin, age) {
-    return BMI + cholesterol + hemoglobin + 3*age;
+    return (BMI + 2*cholesterol + hemoglobin + 3*age) / 22.0;
 }
 
 
